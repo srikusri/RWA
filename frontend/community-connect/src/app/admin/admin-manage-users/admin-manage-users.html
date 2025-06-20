@@ -1,0 +1,176 @@
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+  <div class="layout-container flex h-full grow flex-col">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] bg-white px-6 py-4 shadow-sm">
+      <div class="flex items-center gap-10">
+        <div class="flex items-center gap-3 text-[var(--primary-color)]">
+          <div class="size-7">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+              <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em]">Community Connect</h2>
+        </div>
+        <nav class="flex items-center gap-6">
+          <a class="nav-link text-sm" href="#">Dashboard</a>
+          <a class="nav-link-active text-sm" href="#">Residents</a>
+          <a class="nav-link text-sm" href="#">Events</a>
+          <a class="nav-link text-sm" href="#">Notices</a>
+          <a class="nav-link text-sm" href="#">Complaints</a>
+          <a class="nav-link text-sm" href="#">Vendors</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-6">
+        <label class="relative flex items-center min-w-48 !h-10">
+          <div class="text-[var(--text-secondary)] absolute left-3 top-1/2 -translate-y-1/2" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+            <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+            </svg>
+          </div>
+          <input class="form-input search-input-custom w-full rounded-lg pl-10 pr-4 py-2 text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent text-sm" placeholder="Search..." value=""/>
+        </label>
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXYSvYwS0TiXqTWwqgjdg-_l3xi_NVkYtLlb3yn-xqLjbNHaezkn7u-xiX8QPru7LWWMx1nw0i2ePbdKq01Jy_Pp8QJEgOxOHg-uN0CptciLOtv9cMVFcY26IS_EUJugHiHqji55MLfHOyCGR3XyKH69zhrG9aJ7vQVSHKPlGKyLhd8DS3-Qvhp2F6cwt1kPUv7Cewu457e6e5ha0uMuerAl44Y_FXECsZt2UK0BY_8YKAoh00VIT3vqx4AIdtI7OTHU3Gwlzn0qrc");'></div>
+      </div>
+    </header>
+    <main class="px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-8 bg-gray-50">
+      <div class="layout-content-container flex flex-col w-full max-w-6xl">
+        <div class="flex flex-wrap justify-between items-center gap-4 mb-6">
+          <h1 class="text-[var(--text-primary)] text-3xl font-bold leading-tight">Pending Registrations</h1>
+          <div class="flex items-center gap-2 px-3 py-1.5 rounded-full status-pending text-xs font-medium">
+            <span class="material-icons text-base">hourglass_empty</span>
+            <span>STATUS: PENDING</span>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label class="relative flex items-center w-full max-w-md">
+            <div class="text-[var(--text-secondary)] absolute left-3.5 top-1/2 -translate-y-1/2" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+              <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </div>
+            <input class="form-input search-input-custom w-full rounded-xl pl-12 pr-4 py-3 text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent text-base search-input-custom::placeholder" placeholder="Search by name, email, or apartment number" value=""/>
+          </label>
+        </div>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden border border-[var(--border-color)] @container">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[800px]">
+              <thead class="bg-gray-50 border-b border-[var(--border-color)]">
+                <tr>
+                  <th class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 text-left text-xs table-header-custom uppercase tracking-wider">Name</th>
+                  <th class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 text-left text-xs table-header-custom uppercase tracking-wider">Email</th>
+                  <th class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 text-left text-xs table-header-custom uppercase tracking-wider">Apartment No.</th>
+                  <th class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 text-left text-xs table-header-custom uppercase tracking-wider">Registration Date</th>
+                  <th class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 text-left text-xs table-header-custom uppercase tracking-wider">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[var(--border-color)]">
+                <tr class="hover:bg-gray-50 transition-colors duration-150">
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 whitespace-nowrap table-cell-name text-sm">Sophia Clark</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">sophia.clark@email.com</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">Apt 201</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">2024-07-26</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 whitespace-nowrap text-sm">
+                    <div class="flex items-center gap-2">
+                      <button class="btn-approve px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">check_circle</span>Approve
+                      </button>
+                      <button class="btn-reject px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">cancel</span>Reject
+                      </button>
+                      <button class="btn-view px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">visibility</span>View
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 transition-colors duration-150">
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 whitespace-nowrap table-cell-name text-sm">Ethan Carter</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">ethan.carter@email.com</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">Apt 305</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">2024-07-27</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 whitespace-nowrap text-sm">
+                    <div class="flex items-center gap-2">
+                      <button class="btn-approve px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">check_circle</span>Approve
+                      </button>
+                      <button class="btn-reject px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">cancel</span>Reject
+                      </button>
+                      <button class="btn-view px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">visibility</span>View
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 transition-colors duration-150">
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 whitespace-nowrap table-cell-name text-sm">Olivia Bennett</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">olivia.bennett@email.com</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">Apt 102</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">2024-07-28</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 whitespace-nowrap text-sm">
+                    <div class="flex items-center gap-2">
+                      <button class="btn-approve px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">check_circle</span>Approve
+                      </button>
+                      <button class="btn-reject px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">cancel</span>Reject
+                      </button>
+                      <button class="btn-view px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">visibility</span>View
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 transition-colors duration-150">
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 whitespace-nowrap table-cell-name text-sm">Liam Foster</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">liam.foster@email.com</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">Apt 410</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">2024-07-29</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 whitespace-nowrap text-sm">
+                    <div class="flex items-center gap-2">
+                      <button class="btn-approve px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">check_circle</span>Approve
+                      </button>
+                      <button class="btn-reject px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">cancel</span>Reject
+                      </button>
+                      <button class="btn-view px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">visibility</span>View
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50 transition-colors duration-150">
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120 px-6 py-4 whitespace-nowrap table-cell-name text-sm">Ava Harper</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">ava.harper@email.com</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">Apt 215</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480 px-6 py-4 whitespace-nowrap table-cell-custom text-sm">2024-07-30</td>
+                  <td class="table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600 px-6 py-4 whitespace-nowrap text-sm">
+                    <div class="flex items-center gap-2">
+                      <button class="btn-approve px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">check_circle</span>Approve
+                      </button>
+                      <button class="btn-reject px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">cancel</span>Reject
+                      </button>
+                      <button class="btn-view px-3 py-1.5 rounded-md text-xs font-medium flex items-center gap-1">
+                        <span class="material-icons text-sm">visibility</span>View
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <style>
+            @container(max-width:120px){.table-04aee30f-848b-491c-b48f-f439ccf8a988-column-120{display: none;}}
+            @container(max-width:240px){.table-04aee30f-848b-491c-b48f-f439ccf8a988-column-240{display: none;}}
+            @container(max-width:360px){.table-04aee30f-848b-491c-b48f-f439ccf8a988-column-360{display: none;}}
+            @container(max-width:480px){.table-04aee30f-848b-491c-b48f-f439ccf8a988-column-480{display: none;}}
+            @container(max-width:600px){.table-04aee30f-848b-491c-b48f-f439ccf8a988-column-600{display: none;}}
+          </style>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
