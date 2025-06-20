@@ -1,0 +1,49 @@
+<div class="relative flex size-full min-h-screen flex-col group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+  <div class="flex min-h-screen flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+    <div class="w-full max-w-md bg-white shadow-xl rounded-xl p-6 sm:p-8 lg:p-10">
+      <header class="mb-8 text-center">
+        <div class="inline-flex items-center justify-center gap-3 mb-4">
+          <svg class="h-10 w-10 text-[#3d98f4]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+            <path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+          </svg>
+          <h1 class="text-3xl font-bold tracking-tight text-[#1f2937]">Community Connect</h1>
+        </div>
+        <h2 class="text-xl font-semibold text-[#1f2937]">Welcome Back</h2>
+        <p class="text-sm text-[#6b7280] mt-1">Please sign in to continue.</p>
+      </header>
+      <form class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-[#1f2937] mb-1.5" for="email">Email or Username</label>
+          <input class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg h-12 p-3 text-base font-normal leading-normal placeholder:text-[#6b7280] bg-[#f3f4f6] border border-[#d1d5db] focus:border-[#3d98f4] focus:shadow-[0_0_0_2px_rgba(61,152,244,0.3)] focus:outline-none" id="email" name="email" placeholder="you@example.com" type="text" value=""/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-[#1f2937] mb-1.5" for="password">Password</label>
+          <input class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg h-12 p-3 text-base font-normal leading-normal placeholder:text-[#6b7280] bg-[#f3f4f6] border border-[#d1d5db] focus:border-[#3d98f4] focus:shadow-[0_0_0_2px_rgba(61,152,244,0.3)] focus:outline-none" id="password" name="password" placeholder="••••••••" type="password" value=""/>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-[#1f2937] mb-1.5" for="userType">User Type</label>
+          <select class="flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg h-12 p-3 text-base font-normal leading-normal appearance-none pr-8 bg-no-repeat bg-right-3 bg-[#f3f4f6] border border-[#d1d5db] focus:border-[#3d98f4] focus:shadow-[0_0_0_2px_rgba(61,152,244,0.3)] focus:outline-none" id="userType" name="userType" style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 20 20%27%3e%3cpath stroke=%27%236b7280%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%271.5%27 d=%27M6 8l4 4 4-4%27/%3e%3c/svg%3e');">
+            <option disabled="" selected="" value="">Select user type</option>
+            <option value="resident">Resident</option>
+            <option value="administrator">Administrator</option>
+          </select>
+        </div>
+        <div class="pt-2">
+          <button class="flex w-full min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 text-base tracking-[0.015em] bg-[#3d98f4] text-white font-bold hover:bg-[#2583dc] transition-colors" type="submit">
+            <span class="truncate">Login</span>
+          </button>
+        </div>
+      </form>
+      <div class="mt-6 space-y-3 text-center">
+        <p class="text-sm text-[#6b7280]">
+          Don't have an account?
+          <a class="text-[#3d98f4] hover:text-[#2583dc] hover:underline font-medium" href="#">Register New User</a>
+        </p>
+        <p class="text-sm">
+          <a class="text-[#3d98f4] hover:text-[#2583dc] hover:underline font-medium" href="#">Forgot Password?</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

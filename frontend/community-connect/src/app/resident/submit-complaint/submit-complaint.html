@@ -1,0 +1,162 @@
+<div
+  class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+  style="
+    --select-button-svg: url(&quot;data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2720px%27 height=%2720px%27 fill=%27rgb(87,115,142)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M215.39,92.94a8,8,0,0,0-11.32,0L128,169.37,51.94,92.94a8,8,0,0,0-11.32,11.31l80,80a8,8,0,0,0,11.32,0l80-80A8,8,0,0,0,215.39,92.94Z%27%3e%3c/path%3e%3c/svg%3e&quot;);
+  "
+>
+  <div class="layout-container flex h-full grow flex-col">
+    <header
+      class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] bg-white px-6 sm:px-10 py-4 shadow-sm"
+    >
+      <div class="flex items-center gap-3 text-[var(--text-primary)]">
+        <div class="size-7 text-[var(--primary-color)]">
+          <svg
+            fill="none"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            ></path>
+            <path
+              clip-rule="evenodd"
+              d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <h1
+          class="text-[var(--text-primary)] text-xl font-semibold tracking-tight"
+        >
+          Community Connect
+        </h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="p-2 rounded-full hover:bg-gray-100 transition-colors">
+          <span class="material-icons-outlined text-[var(--text-secondary)]"
+            >notifications</span
+          >
+        </button>
+        <div
+          class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border border-gray-200"
+          style="
+            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB5ANMMVh0WHXP-1yPJTH0ImklOyx3RS5YhrIDxEijSan8UcBHNGIJWH4xO4u7A2hc1puU3WzvlP2EuU3oz-3TOeV9LPOjAlz-3uN1sRpR69dfrghFS5Sd_CKtqsTr1gX0yCILQtCPyFQN_x71C3FOpZW4sI7RNFJNBs6_P_yqd-xFU9wMdfsTlTIE9F5qNQrFm1SfFspTU_bIJIX68xcvL_xEwBpwMq_Rs9M9gpVSCvqu1FDkP7Jspw5K3tYMGcn-ng8Zz__3_ElzC&quot;);
+          "
+        ></div>
+      </div>
+    </header>
+    <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
+      <div
+        class="w-full max-w-xl bg-white shadow-xl rounded-xl p-6 sm:p-8 md:p-10"
+      >
+        <div class="mb-8 text-center">
+          <h2
+            class="text-[var(--text-primary)] text-2xl sm:text-3xl font-bold tracking-tight"
+          >
+            Submit a Request
+          </h2>
+          <p class="text-[var(--text-secondary)] text-sm sm:text-base mt-2">
+            Fill in the details below to submit your request.
+          </p>
+        </div>
+        <form class="space-y-6">
+          <div>
+            <label class="form-label" for="subject"
+              >Subject <span class="text-red-500">*</span></label
+            >
+            <input
+              class="form-input"
+              id="subject"
+              name="subject"
+              placeholder="e.g., Leaky Faucet in Unit 101"
+              required=""
+              type="text"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="description"
+              >Detailed Description <span class="text-red-500">*</span></label
+            >
+            <textarea
+              class="form-input min-h-32 resize-y"
+              id="description"
+              name="description"
+              placeholder="Please provide as much detail as possible..."
+              required=""
+              rows="5"
+            ></textarea>
+          </div>
+          <div>
+            <label class="form-label" for="category"
+              >Category <span class="text-red-500">*</span></label
+            >
+            <select
+              class="form-input appearance-none bg-no-repeat bg-right_0.75rem_center bg-[length:1.25em_1.25em] bg-[image:--select-button-svg]"
+              id="category"
+              name="category"
+              required=""
+            >
+              <option disabled="" selected="" value="">
+                Select a category
+              </option>
+              <option value="maintenance">Maintenance</option>
+              <option value="security">Security</option>
+              <option value="amenities">Amenities Booking</option>
+              <option value="complaint">Complaint</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" for="attachments">Attachments</label>
+            <div
+              class="mt-1 flex justify-center rounded-lg border-2 border-dashed border-[var(--border-color)] px-6 pt-8 pb-10 hover:border-[var(--primary-color)] transition-colors duration-200 ease-in-out"
+            >
+              <div class="space-y-2 text-center">
+                <span
+                  class="material-icons-outlined text-4xl text-[var(--text-secondary)]"
+                  >cloud_upload</span
+                >
+                <div class="flex text-sm text-[var(--text-secondary)]">
+                  <label
+                    class="relative cursor-pointer rounded-md font-medium text-[var(--primary-color)] hover:text-opacity-80 focus-within:outline-none focus-within:ring-2 focus-within:ring-[var(--primary-color)] focus-within:ring-offset-2"
+                    for="file-upload"
+                  >
+                    <span>Upload a file</span>
+                    <input
+                      class="sr-only"
+                      id="file-upload"
+                      multiple=""
+                      name="file-upload"
+                      type="file"
+                    />
+                  </label>
+                  <p class="pl-1">or drag and drop</p>
+                </div>
+                <p class="text-xs text-[var(--text-secondary)]">
+                  PNG, JPG, GIF up to 5MB
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <button class="btn-primary w-full" type="submit">
+              Submit Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer
+      class="py-6 px-6 sm:px-10 text-center border-t border-[var(--border-color)] mt-auto"
+    >
+      <p class="text-sm text-[var(--text-secondary)]">
+        © 2024 Community Connect. All rights reserved.
+      </p>
+    </footer>
+  </div>
+</div>
