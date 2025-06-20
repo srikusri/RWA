@@ -1,0 +1,180 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #3d98f4;
+        --secondary-color: #e7edf4;
+        --text-primary: #0d141c;
+        --text-secondary: #49739c;
+        --background-color: #f8fafc;--border-color: #cbd5e1;}
+      .form-input {
+        @apply w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[var(--text-primary)] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-[var(--border-color)] bg-white focus:border-[var(--primary-color)] h-12 placeholder:text-[var(--text-secondary)] px-4 py-3 text-sm font-normal leading-normal transition-colors duration-200 ease-in-out;
+      }
+      .btn-primary {
+        @apply flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-medium leading-normal tracking-wide shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] transition-colors duration-200 ease-in-out;
+      }
+      .btn-secondary {
+        @apply flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-[var(--secondary-color)] text-[var(--text-primary)] text-sm font-medium leading-normal tracking-wide shadow-sm hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--secondary-color)] transition-colors duration-200 ease-in-out;
+      }
+      .form-label {
+        @apply text-[var(--text-primary)] text-sm font-medium leading-normal pb-1.5;
+      }
+      .calendar-day-button {
+        @apply h-10 w-10 text-sm font-medium leading-normal flex items-center justify-center rounded-full hover:bg-[var(--secondary-color)] transition-colors duration-150 ease-in-out;
+      }
+      .calendar-day-button.selected {
+        @apply bg-[var(--primary-color)] text-white;
+      }
+      .calendar-day-button.disabled {
+        @apply text-slate-400 cursor-not-allowed;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] font-inter text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col group/design-root" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill%27%2349739c%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M203.76,108.24,136,176l-2.24,2.24a8,8,0,0,1-11.52,0L120,176,52.24,108.24a8,8,0,0,1,11.52-11.52L128,160.48l64.24-63.76a8,8,0,0,1,11.52,11.52Z%27%3e%3c/path%3e%3c/svg%3e');">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-6 sm:px-10 py-4 bg-white shadow-sm">
+<div class="flex items-center gap-3">
+<div class="size-7 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[var(--text-primary)] text-xl font-semibold leading-tight">Community Connect</h2>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Dashboard</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Residents</a>
+<a class="text-[var(--primary-color)] text-sm font-semibold leading-normal" href="#">Payments</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Events</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-sm font-medium leading-normal transition-colors" href="#">Notices</a>
+</nav>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border border-slate-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPfJQciUvoCkWOncPeHTLz6gGy0BMmrMpwwIpLNkrNhMJoB-m8jxygUPCpXLCo4sflIldvR1UiUHyTrvfM65rAuqA6HRKhNrptxHqsRN4-Da2V8B-TyLcdeWBShb4558hjLMjwvbCAvKf2AjS0HGvijETSr3IZ4BIiZoOhH0QxX2amL1WZSUC2nV3sxTDY0vBc_gIebXaMfCikiwooXm5FeFozgUuUCD7xnNtiwHjJVsJ5VDRkSYdhNWTetOBwfdBD0IdHmi_5TEde");'></div>
+<button class="md:hidden text-[var(--text-secondary)] hover:text-[var(--primary-color)]">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</header>
+<main class="px-4 sm:px-10 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col w-full max-w-2xl space-y-6">
+<header class="p-4">
+<h1 class="text-[var(--text-primary)] tracking-tight text-2xl sm:text-3xl font-bold leading-tight">Submit Payment</h1>
+<p class="text-[var(--text-secondary)] text-sm mt-1">Please fill out the form below to submit your payment.</p>
+</header>
+<form class="space-y-6 p-4 bg-white shadow-lg rounded-xl border border-[var(--border-color)]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="form-label" for="amount">Amount</label>
+<div class="relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center text-[var(--text-secondary)]">$</span>
+<input class="form-input pl-7" id="amount" placeholder="0.00" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="form-label" for="payment-type">Payment Type</label>
+<select class="form-input bg-[image:--select-button-svg] appearance-none bg-no-repeat bg-[center_right_1rem]" id="payment-type" required="">
+<option value="">Select payment type</option>
+<option value="maintenance">Maintenance Fee</option>
+<option value="event">Event Fee</option>
+<option value="utility">Utility Bill</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+<div>
+<label class="form-label">Payment Date</label>
+<div class="p-4 border border-[var(--border-color)] rounded-lg bg-slate-50">
+<div class="flex items-center justify-between mb-3">
+<button class="p-2 rounded-full hover:bg-slate-200 text-[var(--text-secondary)]" type="button">
+<span class="material-icons text-xl">chevron_left</span>
+</button>
+<p class="text-[var(--text-primary)] text-sm font-semibold">July 2024</p>
+<button class="p-2 rounded-full hover:bg-slate-200 text-[var(--text-secondary)]" type="button">
+<span class="material-icons text-xl">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center">
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">S</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">M</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">T</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">W</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">T</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">F</p>
+<p class="text-[var(--text-secondary)] text-xs font-medium h-8 flex items-center justify-center">S</p>
+<button class="calendar-day-button disabled col-start-4" type="button">1</button>
+<button class="calendar-day-button" type="button">2</button>
+<button class="calendar-day-button" type="button">3</button>
+<button class="calendar-day-button" type="button">4</button>
+<button class="calendar-day-button selected" type="button">5</button>
+<button class="calendar-day-button" type="button">6</button>
+<button class="calendar-day-button" type="button">7</button>
+<button class="calendar-day-button" type="button">8</button>
+<button class="calendar-day-button" type="button">9</button>
+<button class="calendar-day-button" type="button">10</button>
+<button class="calendar-day-button" type="button">11</button>
+<button class="calendar-day-button" type="button">12</button>
+<button class="calendar-day-button" type="button">13</button>
+<button class="calendar-day-button" type="button">14</button>
+<button class="calendar-day-button" type="button">15</button>
+<button class="calendar-day-button" type="button">16</button>
+<button class="calendar-day-button" type="button">17</button>
+<button class="calendar-day-button" type="button">18</button>
+<button class="calendar-day-button" type="button">19</button>
+<button class="calendar-day-button" type="button">20</button>
+<button class="calendar-day-button" type="button">21</button>
+<button class="calendar-day-button" type="button">22</button>
+<button class="calendar-day-button" type="button">23</button>
+<button class="calendar-day-button" type="button">24</button>
+<button class="calendar-day-button" type="button">25</button>
+<button class="calendar-day-button" type="button">26</button>
+<button class="calendar-day-button" type="button">27</button>
+<button class="calendar-day-button" type="button">28</button>
+<button class="calendar-day-button" type="button">29</button>
+<button class="calendar-day-button" type="button">30</button>
+<button class="calendar-day-button" type="button">31</button>
+</div>
+</div>
+</div>
+<div>
+<label class="form-label" for="comments">Comments (optional)</label>
+<textarea class="form-input min-h-28" id="comments" placeholder="Add any relevant comments or notes..."></textarea>
+</div>
+<div>
+<label class="form-label">Payment Proof</label>
+<div class="flex flex-col items-center justify-center gap-3 rounded-lg border-2 border-dashed border-[var(--border-color)] px-6 py-10 bg-slate-50 hover:border-[var(--primary-color)] transition-colors duration-200 ease-in-out">
+<span class="material-icons text-4xl text-[var(--primary-color)]">cloud_upload</span>
+<p class="text-[var(--text-primary)] text-base font-medium">Upload Payment Proof</p>
+<p class="text-[var(--text-secondary)] text-xs text-center">Drag &amp; drop or click to browse (PDF, JPG, PNG up to 5MB)</p>
+<input accept=".pdf,.jpg,.jpeg,.png" class="hidden" id="file-upload" type="file"/>
+<label class="btn-secondary mt-2 !h-9 !px-5 !text-xs" for="file-upload">
+                    Browse Files
+                  </label>
+<div class="w-full bg-slate-200 rounded-full h-1.5 mt-3 hidden">
+<div class="bg-[var(--primary-color)] h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-4">
+<button class="btn-primary" type="submit">
+<span class="material-icons mr-2 text-base">payment</span>
+                  Submit Payment
+                </button>
+</div>
+</form>
+</div>
+</main>
+<footer class="text-center py-6 border-t border-[var(--border-color)] bg-white">
+<p class="text-xs text-[var(--text-secondary)]">© 2024 Community Connect. All rights reserved.</p>
+</footer>
+</div>
+</div>
+
+</body></html>

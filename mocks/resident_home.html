@@ -1,0 +1,124 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #3d98f4;
+        --secondary-color: #10b981;--background-color: #f3f4f6;--card-background-color: #ffffff;
+        --text-primary-color: #1f2937;--text-secondary-color: #6b7280;--accent-color: #fbbf24;}
+      .nav-link.active {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      .nav-link.active svg {
+        color: white;
+      }
+      .nav-link:hover {
+        background-color: #e5e7eb;}
+    </style>
+</head>
+<body class="bg-[var(--background-color)]" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="flex h-full grow">
+<aside class="w-72 bg-[var(--card-background-color)] shadow-lg p-6 flex flex-col justify-between fixed top-0 left-0 h-full lg:sticky">
+<div>
+<div class="flex flex-col mb-10">
+<h1 class="text-[var(--text-primary-color)] text-xl font-bold leading-normal">Community Connect</h1>
+<p class="text-[var(--text-secondary-color)] text-sm font-normal leading-normal">Resident App</p>
+</div>
+<nav class="flex flex-col gap-3">
+<a class="nav-link active flex items-center gap-3 px-4 py-3 rounded-lg text-[var(--text-primary-color)] hover:bg-gray-100 transition-colors duration-150" href="#">
+<span class="material-icons text-[var(--text-primary-color)]">campaign</span>
+<span class="text-sm font-medium leading-normal">Announcements</span>
+</a>
+<a class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-[var(--text-primary-color)] hover:bg-gray-100 transition-colors duration-150" href="#">
+<span class="material-icons text-[var(--text-primary-color)]">payments</span>
+<span class="text-sm font-medium leading-normal">Payments</span>
+</a>
+<a class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-[var(--text-primary-color)] hover:bg-gray-100 transition-colors duration-150" href="#">
+<span class="material-icons text-[var(--text-primary-color)]">flag</span>
+<span class="text-sm font-medium leading-normal">Complaints</span>
+</a>
+<a class="nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-[var(--text-primary-color)] hover:bg-gray-100 transition-colors duration-150" href="#">
+<span class="material-icons text-[var(--text-primary-color)]">event</span>
+<span class="text-sm font-medium leading-normal">Facility Booking</span>
+</a>
+</nav>
+</div>
+<button class="mt-auto flex items-center gap-3 px-4 py-3 rounded-lg text-[var(--text-secondary-color)] hover:bg-gray-100 transition-colors duration-150 w-full">
+<span class="material-icons">logout</span>
+<span class="text-sm font-medium">Logout</span>
+</button>
+</aside>
+<main class="flex-1 p-6 lg:p-8 ml-0 lg:ml-72">
+<header class="mb-8">
+<h1 class="text-[var(--text-primary-color)] tracking-light text-3xl font-bold leading-tight">Welcome, Alex</h1>
+</header>
+<section class="mb-10">
+<h2 class="text-[var(--text-primary-color)] text-2xl font-semibold leading-tight tracking-[-0.015em] mb-6">Quick Actions</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="flex flex-col items-center justify-center p-6 bg-[var(--primary-color)] text-white rounded-xl shadow-md hover:bg-blue-600 transition-colors duration-200 h-32">
+<span class="material-icons text-3xl mb-2">payment</span>
+<span class="text-lg font-semibold">Make a Payment</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-[var(--secondary-color)] text-white rounded-xl shadow-md hover:bg-green-600 transition-colors duration-200 h-32">
+<span class="material-icons text-3xl mb-2">report_problem</span>
+<span class="text-lg font-semibold">Submit a Complaint</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-[var(--accent-color)] text-[var(--text-primary-color)] rounded-xl shadow-md hover:bg-yellow-400 transition-colors duration-200 h-32">
+<span class="material-icons text-3xl mb-2">calendar_today</span>
+<span class="text-lg font-semibold">Book a Facility</span>
+</button>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<section class="lg:col-span-2">
+<h2 class="text-[var(--text-primary-color)] text-2xl font-semibold leading-tight tracking-[-0.015em] mb-6">Recent Announcements</h2>
+<div class="space-y-6">
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<div class="md:flex">
+<div class="md:shrink-0">
+<img alt="Community Meeting" class="h-48 w-full object-cover md:h-full md:w-48" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRoHdsagPcpc9jM4a9DFjKyVxnJSDDxZN6O37QkkXrjTIWS-bHPbPmhayJyCq4pDmDTF3x20ErYPt_ZUQqaZKNz8tJXI1d-hy5q0su6N_LV73PyDkdZ5ByUaewgx_3ahF_LtSz8juxMoIzBiP0DpodWgRoLW-BGCGxMeao56UXD8WHc-TaSK23QhAeuPSUNZ-74A0sk2EnX98lEA4cpeKxAP07KhVhDeH9PRQ2xToYAJiZtCvYWZ2hl5_HoNy4kIZuK5q9sh2j-cqy"/>
+</div>
+<div class="p-6">
+<div class="uppercase tracking-wide text-xs text-[var(--primary-color)] font-semibold">New</div>
+<a class="block mt-1 text-lg leading-tight font-bold text-[var(--text-primary-color)] hover:underline" href="#">Community Meeting</a>
+<p class="mt-2 text-[var(--text-secondary-color)] text-sm">Join us for the monthly community meeting on July 15th at 7 PM in the community hall.</p>
+</div>
+</div>
+</div>
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<div class="md:flex">
+<div class="md:shrink-0">
+<img alt="Summer BBQ" class="h-48 w-full object-cover md:h-full md:w-48" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWgEUfF-z1rQKoNcwWJylNEVRE_ZRml9-nIiHN81PqsConBcBNsFz9wtJMaAkeuLrwxnIwLaVj1Z9VfxM_2BxSeICsFJcLuiexvuaZwGvEu6u5WFg6PYP-fOdPUTEmR7HggNoWFbXalsby4X5gs7-vJEMba1na7Zr5U4kZw-ebX68_hj7uePYAUcTOds7yfSETBcQuV5Boe0Q6byjJg5LqE2ZPA_OPezSMytPtIbWqYExsjpDVBicU8F6_pL23mV8FR9KRyIryjdDi"/>
+</div>
+<div class="p-6">
+<a class="block text-lg leading-tight font-bold text-[var(--text-primary-color)] hover:underline" href="#">Upcoming Event: Summer BBQ</a>
+<p class="mt-2 text-[var(--text-secondary-color)] text-sm">Get ready for our annual Summer BBQ on August 5th! More details to follow.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-[var(--text-primary-color)] text-2xl font-semibold leading-tight tracking-[-0.015em] mb-6">Pending Actions</h2>
+<div class="bg-[var(--card-background-color)] rounded-xl shadow-lg overflow-hidden">
+<img alt="Pending Dues" class="h-40 w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwt4_Ko286x_fNldwT12IzV-aKSVeT6NCcX0mFwZ3l7Yzpv1ZN1bqdMpDjFmuqno0u-pwOmHbMTjVMwFBhMy_PclRfFYDhw6aF6d6yYkMIL55Ugu6APDbq16PuTweWAhJ9PZfc8so9rkCUtSynEQw1Pqlc8GDGMyqa-K2QNtba5ftrUR-rp6i8Y6BtH1lFFQMWsHBtGWaqOoa6v_9lqklnEUMePJOWO-i7-JrUqjSiXLG6KTEcgN8XAhjjpfbeJk_VKk3xVGbCpGup"/>
+<div class="p-6">
+<h3 class="text-lg font-bold text-red-600">Unpaid Dues</h3>
+<p class="mt-2 text-[var(--text-secondary-color)] text-sm">You have outstanding dues of $50. Please make a payment at your earliest convenience.</p>
+<button class="mt-4 w-full bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 transition-colors duration-150 text-sm font-medium">Pay Now</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
